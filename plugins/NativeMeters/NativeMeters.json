@@ -1,0 +1,34 @@
+{
+  "Author": "Zeffuro",
+  "Name": "NativeMeters",
+  "InternalName": "NativeMeters",
+  "AssemblyVersion": "1.0.0.0",
+  "Description": "Native DPS Meters for Final Fantasy XIV; highly WIP, config might be reset.",
+  "ApplicableVersion": "any",
+  "RepoUrl": "https://github.com/Zeffuro/NativeMeters",
+  "Tags": [
+    "dps",
+    "meters",
+    "combat",
+    "parse",
+    "parsing",
+    "damage",
+    "native",
+    "hud",
+    "stats",
+    "ui",
+    "raiding"
+  ],
+  "DalamudApiLevel": 14,
+  "LoadRequiredState": 0,
+  "LoadSync": false,
+  "CanUnloadAsync": false,
+  "LoadPriority": 0,
+  "ImageUrls": [
+    "https://raw.githubusercontent.com/Zeffuro/NativeMeters/master/Media/screenshot1.png",
+    "https://raw.githubusercontent.com/Zeffuro/NativeMeters/master/Media/screenshot2.png"
+  ],
+  "IconUrl": "https://raw.githubusercontent.com/Zeffuro/NativeMeters/master/Media/icon.png",
+  "Punchline": "Meters that feel like part of the game. Who needs ImGui when you have AtkNodes?",
+  "AcceptsFeedback": true
+}
