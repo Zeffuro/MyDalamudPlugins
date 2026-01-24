@@ -1,0 +1,63 @@
+name: Update Meta Data
+
+on:
+  schedule:
+    - cron: '0 */12 * * *'
+  workflow_dispatch: 
+
+permissions:
+  contents: write
+
+jobs:
+  update-counts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Fetch Download Counts and Update JSON
+        shell: pwsh
+        run: |
+          $repoJsonPath = "repo.json"
+          $repoJson = Get-Content $repoJsonPath | ConvertFrom-Json
+          
+          foreach ($plugin in $repoJson) {
+              if ($plugin.RepoUrl -match "github.com/([^/]+/[^/]+)") {
+                  $repoPath = $Matches[1]
+                  Write-Host "Fetching downloads for $repoPath..."
+                  
+                  try {
+                      $releases = Invoke-RestMethod -Uri "https://api.github.com/repos/$repoPath/releases" -Headers @{
+                          "Authorization" = "token ${{ secrets.GITHUB_TOKEN }}"
+                      }
+                      
+                      $totalDownloads = 0
+                      foreach ($release in $releases) {
+                          foreach ($asset in $release.assets) {
+                              $totalDownloads += $asset.download_count
+                          }
+                      }
+                      
+                      Write-Host "Total downloads: $totalDownloads"
+                      $plugin.DownloadCount = $totalDownloads
+                  }
+                  catch {
+                      Write-Warning "Could not fetch data for $repoPath"
+                  }
+              }
+          }
+          
+          # Save the updated JSON
+          $repoJson | ConvertTo-Json -Depth 100 | Set-Content $repoJsonPath
+
+      - name: Commit and Push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add repo.json
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "Update download counts [skip ci]"
+            git push
+          else
+            echo "No changes to commit"
+          fi
