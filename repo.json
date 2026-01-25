@@ -55,10 +55,10 @@
     "IconUrl": "https://raw.githubusercontent.com/Zeffuro/NativeMeters/master/Media/icon.png",
     "Punchline": "Meters that feel like part of the game. Who needs ImGui when you have AtkNodes?",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Zeffuro/NativeMeters/releases/download/1.0.0.1/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Zeffuro/NativeMeters/releases/download/1.0.0.1/latest.zip",
-    "DownloadLinkTesting": "https://github.com/Zeffuro/NativeMeters/releases/download/1.0.0.1/latest.zip",
+    "DownloadLinkInstall": "https://github.com/Zeffuro/NativeMeters/releases/download/1.0.0.2/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Zeffuro/NativeMeters/releases/download/1.0.0.2/latest.zip",
+    "DownloadLinkTesting": "https://github.com/Zeffuro/NativeMeters/releases/download/1.0.0.2/latest.zip",
     "DownloadCount": 0,
-    "LastUpdated": 1769278805
+    "LastUpdated": 1769322623
   }
 ]
