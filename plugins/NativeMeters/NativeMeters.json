@@ -2,8 +2,8 @@
   "Author": "Zeffuro",
   "Name": "NativeMeters",
   "InternalName": "NativeMeters",
-  "AssemblyVersion": "1.0.2.0",
-  "Description": "Native DPS Meters for Final Fantasy XIV; highly WIP, config might be reset.",
+  "AssemblyVersion": "1.0.2.1",
+  "Description": "Native DPS Meters for Final Fantasy XIV, still in beta and may be subject to change.",
   "ApplicableVersion": "any",
   "RepoUrl": "https://github.com/Zeffuro/NativeMeters",
   "Tags": [
@@ -26,7 +26,8 @@
   "LoadPriority": 0,
   "ImageUrls": [
     "https://raw.githubusercontent.com/Zeffuro/NativeMeters/master/Media/screenshot1.png",
-    "https://raw.githubusercontent.com/Zeffuro/NativeMeters/master/Media/screenshot2.png"
+    "https://raw.githubusercontent.com/Zeffuro/NativeMeters/master/Media/screenshot2.png",
+    "https://raw.githubusercontent.com/Zeffuro/NativeMeters/master/Media/screenshot3.png"
   ],
   "IconUrl": "https://raw.githubusercontent.com/Zeffuro/NativeMeters/master/Media/icon.png",
   "Punchline": "Meters that feel like part of the game. Who needs ImGui when you have AtkNodes?",

@@ -26,7 +26,7 @@
     "Author": "Zeffuro",
     "Name": "NativeMeters",
     "InternalName": "NativeMeters",
-    "AssemblyVersion": "1.0.2.0",
+    "AssemblyVersion": "1.0.2.1",
     "Description": "Native DPS Meters for Final Fantasy XIV, still in beta and may be subject to change.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Zeffuro/NativeMeters",
@@ -56,10 +56,10 @@
     "IconUrl": "https://raw.githubusercontent.com/Zeffuro/NativeMeters/master/Media/icon.png",
     "Punchline": "Meters that feel like part of the game. Who needs ImGui when you have AtkNodes?",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Zeffuro/NativeMeters/releases/download/1.0.2.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Zeffuro/NativeMeters/releases/download/1.0.2.0/latest.zip",
-    "DownloadLinkTesting": "https://github.com/Zeffuro/NativeMeters/releases/download/1.0.2.0/latest.zip",
+    "DownloadLinkInstall": "https://github.com/Zeffuro/NativeMeters/releases/download/1.0.2.1/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Zeffuro/NativeMeters/releases/download/1.0.2.1/latest.zip",
+    "DownloadLinkTesting": "https://github.com/Zeffuro/NativeMeters/releases/download/1.0.2.1/latest.zip",
     "DownloadCount": 42,
-    "LastUpdated": 1770669632
+    "LastUpdated": 1770972294
   }
 ]
