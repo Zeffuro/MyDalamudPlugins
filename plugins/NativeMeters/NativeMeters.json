@@ -2,7 +2,7 @@
   "Author": "Zeffuro",
   "Name": "NativeMeters",
   "InternalName": "NativeMeters",
-  "AssemblyVersion": "1.0.2.2",
+  "AssemblyVersion": "1.0.2.3",
   "Description": "Native DPS Meters for Final Fantasy XIV, still in beta and may be subject to change.",
   "ApplicableVersion": "any",
   "RepoUrl": "https://github.com/Zeffuro/NativeMeters",
