@@ -21,23 +21,35 @@ jobs:
           $repoJsonPath = "repo.json"
           $repoJson = Get-Content $repoJsonPath | ConvertFrom-Json
           
+          $headers = @{
+              Authorization = "token ${{ secrets.GITHUB_TOKEN }}"
+              "User-Agent"  = "github-actions"
+          }
+          
           foreach ($plugin in $repoJson) {
               if ($plugin.RepoUrl -match "github.com/([^/]+/[^/]+)") {
                   $repoPath = $Matches[1]
                   Write-Host "Fetching downloads for $repoPath..."
-                  
+          
                   try {
-                      $releases = Invoke-RestMethod -Uri "https://api.github.com/repos/$repoPath/releases" -Headers @{
-                          "Authorization" = "token ${{ secrets.GITHUB_TOKEN }}"
-                      }
-                      
                       $totalDownloads = 0
-                      foreach ($release in $releases) {
-                          foreach ($asset in $release.assets) {
-                              $totalDownloads += $asset.download_count
-                          }
+                      $page = 1
+          
+                      while ($true) {
+                          $url = "https://api.github.com/repos/$repoPath/releases?per_page=100&page=$page"
+                          $releases = Invoke-RestMethod -Uri $url -Headers $headers
+          
+                          if (-not $releases) { break }
+          
+                          $totalDownloads += (
+                              $releases.assets |
+                              Where-Object { $_ } |
+                              Measure-Object download_count -Sum
+                          ).Sum
+          
+                          $page++
                       }
-                      
+          
                       Write-Host "Total downloads: $totalDownloads"
                       $plugin.DownloadCount = $totalDownloads
                   }
@@ -47,7 +59,6 @@ jobs:
               }
           }
           
-          # Save the updated JSON
           $repoJson | ConvertTo-Json -Depth 100 -AsArray | Set-Content $repoJsonPath
 
       - name: Commit and Push changes
