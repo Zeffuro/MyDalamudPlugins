@@ -2,7 +2,7 @@
   "Author": "Zeffuro",
   "Name": "NativeMeters",
   "InternalName": "NativeMeters",
-  "AssemblyVersion": "1.0.3.0",
+  "AssemblyVersion": "1.0.3.1",
   "Description": "Native DPS Meters for Final Fantasy XIV, still in beta and may be subject to change.",
   "ApplicableVersion": "any",
   "RepoUrl": "https://github.com/Zeffuro/NativeMeters",
@@ -19,7 +19,7 @@
     "ui",
     "raiding"
   ],
-  "DalamudApiLevel": 14,
+  "DalamudApiLevel": 15,
   "LoadRequiredState": 0,
   "LoadSync": false,
   "CanUnloadAsync": false,
