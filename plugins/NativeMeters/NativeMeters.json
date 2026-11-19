@@ -2,7 +2,7 @@
   "Author": "Zeffuro",
   "Name": "NativeMeters",
   "InternalName": "NativeMeters",
-  "AssemblyVersion": "1.0.3.10",
+  "AssemblyVersion": "1.1.0.0",
   "Description": "Native DPS Meters for Final Fantasy XIV, still in beta and may be subject to change.",
   "ApplicableVersion": "any",
   "RepoUrl": "https://github.com/Zeffuro/NativeMeters",
@@ -31,6 +31,6 @@
   ],
   "IconUrl": "https://raw.githubusercontent.com/Zeffuro/NativeMeters/master/Media/icon.png",
   "Punchline": "Meters that feel like part of the game. Who needs ImGui when you have AtkNodes?",
-  "Changelog": "# 1.0.3.10\r\n\r\n- Added an option to keep your own row visible when collapsed.\r\n- Added more button actions.\r\n- Added rank and combatant count tags.\r\n- Added an Asset component with a duty clock.\r\n- Made removing meters safer.\r\n- Added the Analicecube preset.",
+  "Changelog": "# 1.1.0.0\r\n\r\n- Added a first-time setup wizard that helps you place your first meter. Run `/ntm setup` to open it again.\r\n- Added horizontal meters, new presets, and a meter builder with a preview.\r\n- Added an option to show your own DPS in the server info bar.\r\n- Added a Lock button next to unlocked meters.\r\n- Added a confirmation before replacing a meter from the clipboard.",
   "AcceptsFeedback": true
 }
