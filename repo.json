@@ -38,5 +38,32 @@
     "DownloadLinkTesting": "https://github.com/Zeffuro/NativeMeters/releases/download/1.1.0.1/latest.zip",
     "DownloadCount": 2344.0,
     "LastUpdated": 1795165913
+  },
+  {
+    "DownloadCount": 0,
+    "Author": "Zeffuro",
+    "Name": "ZeffLens",
+    "InternalName": "ZeffLens",
+    "AssemblyVersion": "1.0.0.0",
+    "Description": "Compare update times, check process memory, and see what stays loaded after a plugin reload.",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Zeffuro/ZeffLens",
+    "Tags": [
+      "diagnostics",
+      "debugging",
+      "performance",
+      "profiling"
+    ],
+    "DalamudApiLevel": 15,
+    "LoadRequiredState": 2,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "Punchline": "Check plugin performance and reloads.",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Zeffuro/ZeffLens/releases/download/1.0.0.0/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Zeffuro/ZeffLens/releases/download/1.0.0.0/latest.zip",
+    "DownloadLinkTesting": "https://github.com/Zeffuro/ZeffLens/releases/download/1.0.0.0/latest.zip",
+    "LastUpdated": 1795242663
   }
 ]

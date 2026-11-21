@@ -1,0 +1,22 @@
+{
+  "Author": "Zeffuro",
+  "Name": "ZeffLens",
+  "InternalName": "ZeffLens",
+  "AssemblyVersion": "1.0.0.0",
+  "Description": "Compare update times, check process memory, and see what stays loaded after a plugin reload.",
+  "ApplicableVersion": "any",
+  "RepoUrl": "https://github.com/Zeffuro/ZeffLens",
+  "Tags": [
+    "diagnostics",
+    "debugging",
+    "performance",
+    "profiling"
+  ],
+  "DalamudApiLevel": 15,
+  "LoadRequiredState": 2,
+  "LoadSync": false,
+  "CanUnloadAsync": false,
+  "LoadPriority": 0,
+  "Punchline": "Check plugin performance and reloads.",
+  "AcceptsFeedback": true
+}
