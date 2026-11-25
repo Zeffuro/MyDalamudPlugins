@@ -36,11 +36,11 @@
     "DownloadLinkInstall": "https://github.com/Zeffuro/NativeMeters/releases/download/1.1.0.1/latest.zip",
     "DownloadLinkUpdate": "https://github.com/Zeffuro/NativeMeters/releases/download/1.1.0.1/latest.zip",
     "DownloadLinkTesting": "https://github.com/Zeffuro/NativeMeters/releases/download/1.1.0.1/latest.zip",
-    "DownloadCount": 2411.0,
+    "DownloadCount": 2417.0,
     "LastUpdated": 1795165913
   },
   {
-    "DownloadCount": 11.0,
+    "DownloadCount": 13.0,
     "Author": "Zeffuro",
     "Name": "ZeffLens",
     "InternalName": "ZeffLens",
