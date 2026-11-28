@@ -44,7 +44,7 @@
     "Author": "Zeffuro",
     "Name": "ZeffLens",
     "InternalName": "ZeffLens",
-    "AssemblyVersion": "1.0.0.0",
+    "AssemblyVersion": "1.0.0.1",
     "Description": "Compare update times, check process memory, and see what stays loaded after a plugin reload.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Zeffuro/ZeffLens",
@@ -61,9 +61,10 @@
     "LoadPriority": 0,
     "Punchline": "Check plugin performance and reloads.",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Zeffuro/ZeffLens/releases/download/1.0.0.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Zeffuro/ZeffLens/releases/download/1.0.0.0/latest.zip",
-    "DownloadLinkTesting": "https://github.com/Zeffuro/ZeffLens/releases/download/1.0.0.0/latest.zip",
-    "LastUpdated": 1795242663
+    "DownloadLinkInstall": "https://github.com/Zeffuro/ZeffLens/releases/download/1.0.0.1/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Zeffuro/ZeffLens/releases/download/1.0.0.1/latest.zip",
+    "DownloadLinkTesting": "https://github.com/Zeffuro/ZeffLens/releases/download/1.0.0.1/latest.zip",
+    "LastUpdated": 1795888633,
+    "IconUrl": "https://raw.githubusercontent.com/Zeffuro/ZeffLens/master/Media/icon.png"
   }
 ]
